@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+@font-face {
+    font-family: Quantum;
+    src: url(img/Quantum.otf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -289,6 +295,7 @@
     font-weight: 100;
     font-family: poppins;
     line-height: 25px;
+    color: white;
 }
 
 .info-image img {
