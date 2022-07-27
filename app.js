@@ -6,3 +6,9 @@ var typed = new Typed('.typing-1', {
     loop: true,
     loopCount: Infinity // Default value
 });
+
+let text = document.getElementById('text');
+window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+    text.style.transform = `translateX(-${value*3}px)`
+});

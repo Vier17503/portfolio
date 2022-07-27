@@ -17,12 +17,6 @@
 
 .header {
     height: 100vh;
-    overflow: hidden;
-    background-image: url(img/klipartz.com.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-    background-size: contain;
 }
 
 .video {
@@ -44,6 +38,7 @@
     width: 100%;
     margin: auto;
     padding: 35px 100px;
+    z-index: 999;
 }
 
 .logo {
@@ -134,21 +129,28 @@
 }
 
 .text1 {
+    font-family: poppins;
     font-size: 27px;
+    color: white;
 }
 
 .text2 {
+    color: white;
     font-size: 75px;
-    font-weight: 700;
+    font-family: Quantum;
+    font-weight: 200;
 }
 
 .text3 {
+    color: white;
     font-size: 40px;
     margin: 5px 0;
+    font-family: poppins;
     font-weight: 700;
 }
 
 .but {
+    font-family: poppins;
     display: inline-block;
     background: springgreen;
     color: white;
@@ -168,10 +170,64 @@
 
 .text3 span {
     color: springgreen;
+    font-family: poppins;
 }
 
+.header-feature {
+    overflow: hidden;
+}
 
-/* .box {
+.header-feature img {
+    width: 1020px;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, springgreen);
+    border-radius: 6px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, springgreen, transparent);
+}
+
+.main {
+    position: relative;
+    padding-top: 50px;
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.text-about-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.title-text {
+    position: relative;
+    right: -2500px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Quantum;
+    -webkit-text-stroke: 0.5px springgreen;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 0.1cm;
+}
+
+.about-info {
+    padding-left: 50px;
+}
+
+.box {
     position: relative;
     padding: 8px 36px;
     margin-top: 20px;
@@ -182,7 +238,7 @@
     overflow: hidden;
     font-size: 25px;
     font-weight: bold;
-    width: 160px;
+    width: 150px;
     height: 50px;
 }
 
@@ -224,48 +280,24 @@
     justify-content: center;
     align-items: center;
     color: white;
-} */
-
- ::-webkit-scrollbar {
-    width: 8px;
+    font-family: poppins;
+    font-size: 15px;
 }
 
- ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, springgreen);
-    border-radius: 6px;
+.info-text {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: poppins;
+    line-height: 25px;
 }
 
- ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(transparent, springgreen, transparent);
-}
-
-
-/* .header-feature img {
-    width: 1000px;
-    margin-left: -200px;
-} */
-
-.main {
-    padding-top: 50px;
-    background-image: url(img/background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.title-text {
-    position: relative;
-    text-align: center;
-    color: springgreen;
-    font-size: 60px;
-    font-weight: bold;
-    font-family: Quantum;
-    -webkit-text-stroke: 0.5px springgreen;
-    text-transform: uppercase;
-    color: transparent;
-    letter-spacing: 0.1cm;
+.info-image img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .test {
-    height: 1000px;
+    height: 5000px;
 }
