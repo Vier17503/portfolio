@@ -18,6 +18,11 @@
 .header {
     height: 100vh;
     overflow: hidden;
+    background-image: url(img/klipartz.com.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: contain;
 }
 
 .video {
@@ -31,7 +36,7 @@
     /* width: auto;
     height: auto; */
     z-index: -1000;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .showcase {
@@ -222,7 +227,7 @@
 } */
 
  ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
 
  ::-webkit-scrollbar-thumb {
@@ -234,7 +239,33 @@
     background: linear-gradient(transparent, springgreen, transparent);
 }
 
-.header-feature img {
+
+/* .header-feature img {
     width: 1000px;
     margin-left: -200px;
+} */
+
+.main {
+    padding-top: 50px;
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-text {
+    position: relative;
+    text-align: center;
+    color: springgreen;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Quantum;
+    -webkit-text-stroke: 0.5px springgreen;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 0.1cm;
+}
+
+.test {
+    height: 1000px;
 }
