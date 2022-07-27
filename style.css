@@ -15,6 +15,11 @@
     z-index: 3;
 } */
 
+.header {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .video {
     position: absolute;
     bottom: 0px;
@@ -160,7 +165,8 @@
     color: springgreen;
 }
 
-.box {
+
+/* .box {
     position: relative;
     padding: 8px 36px;
     margin-top: 20px;
@@ -213,7 +219,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-}
+} */
 
  ::-webkit-scrollbar {
     width: 12px;
@@ -226,4 +232,9 @@
 
  ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, springgreen, transparent);
+}
+
+.header-feature img {
+    width: 1000px;
+    margin-left: -200px;
 }
