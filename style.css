@@ -187,15 +187,6 @@ html {
     font-family: poppins;
 }
 
-
-/* .header-feature {
-    overflow: hidden;
-}
-
-.header-feature img {
-    width: 100%;
-} */
-
  ::-webkit-scrollbar {
     width: 8px;
 }
@@ -228,8 +219,8 @@ html {
 
 .title-text {
     position: relative;
-    right: -2800px;
-    font-size: 60px;
+    right: -3500px;
+    font-size: 65px;
     font-weight: bold;
     font-family: Quantum;
     -webkit-text-stroke: 0.5px springgreen;
@@ -241,6 +232,7 @@ html {
 .about-info {
     padding-left: 50px;
     padding-bottom: 50px;
+    padding-top: 200px;
 }
 
 .box {
@@ -349,26 +341,76 @@ html {
 
 .title-text-service {
     color: transparent;
-    font-size: 60px;
+    font-size: 65px;
     font-weight: bold;
     font-family: Quantum;
     -webkit-text-stroke: 0.5px springgreen;
     text-align: center;
-}
-
-.hinh {
-    height: 100%;
-}
-
-.illus {
-    overflow: hidden;
-}
-
-.uxui {
-    background-color: red;
-    height: 1080px;
+    letter-spacing: 0.1cm;
+    text-transform: uppercase;
 }
 
 .test {
     height: 5000px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#colorscreen {
+    position: fixed;
+    top: -20px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    z-index: -1500;
+    color: #FFF;
+    overflow: hidden;
+}
+
+@-webkit-keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 1000px, 0);
+        transform: translate3d(0, 1000px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 1000px, 0);
+        transform: translate3d(0, 1000px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+}
+
+h2 {
+    font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 0.00em;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.01em;
 }

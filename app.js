@@ -20,3 +20,20 @@ window.addEventListener('scroll', function() {
     let value = window.scrollY;
     text.style.transform = `translateX(-${value*3}px)`
 });
+
+$('.iconM-testimonials').on('click', function() {
+    $("#colorscreen").removeClass("fadeInUpBig").addClass("fadeInUpBig");
+    $('.fadeInUpBig').css('background-color', 'rgba(164, 196, 0, 0.2)');
+    $(".tile-group.main").css({ marginLeft: "-40px", width: "1080px" }).load("musability-musictherapy-company-overview.html");
+
+
+});
+
+
+$('.iconM-referrals').on('click', function() {
+    $("#colorscreen").removeClass("fadeInUpBig").addClass("fadeInUpBig");
+    $('.fadeInUpBig').css('background-color', 'rgba(183, 192, 26, 0.8)');
+    $(".tile-group.main").css({ marginLeft: "-40px", width: "1080px" }).load("musability-musictherapy-company-overview.html");
+
+
+});
