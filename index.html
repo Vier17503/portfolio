@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <!-- <div id="loader-wrapper">
+
+    <div id="loader-wrapper">
         <div id="loader">
             <p>LOADING</p>
             <br>
@@ -22,7 +23,7 @@
         </div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-    </div> -->
+    </div>
     <div class="wrapper">
         <div>
             <video class="video" preload="auto" autoplay="true" loop="loop" muted volume="0">
@@ -40,19 +41,9 @@
                     <ul class="row">
                         <li><a href="#" class="text-a">Home</a></li>
                         <li><a href="#about" class="text-a">About</a></li>
-                        <li><a href="#service" class="text-a">Services</a></li>
-                        <li><a href="#" class="text-a">Skills</a></li>
-                        <li><a href="#" class="text-a">Teams</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <a href="#" class="text-a">Contact</a>
-                                <div class="dropdown-content">
-                                    <a href="https://www.behance.net/" class="dropdown-content-item">Behance</a>
-                                    <a href="https://www.instagram.com/" class="dropdown-content-item">Instagram</a>
-                                    <a href="https://www.facebook.com/" class="dropdown-content-item">Facebook</a>
-                                </div>
-                            </div>
-                        </li>
+                        <li><a href="#service" class="text-a">Skills</a></li>
+                        <li><a href="/project.html" class="text-a">Projects</a></li>
+                        <li><a href="#contact" class="text-a">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,60 +62,155 @@
         </div>
         <!-- header -->
         <div class="main">
+            <div class="astronaut">
+                <marquee behavior="alternate" scrollamount="10">
+                    <marquee behavior="alternate" scrollamount="10" direction="down">
+                        <img class="img-marquee" src="/img/cute-cat-astronaut.png" alt="cute-cat-astronaut">
+                    </marquee>
+                </marquee>
+                <marquee behavior="alternate" scrollamount="20">
+                    <marquee behavior="alternate" scrollamount="10" direction="up">
+                        <img class="img-marquee" src="/img/axolotl-cute-astronaut.png" alt="axolotl-cute-astronaut">
+                    </marquee>
+                </marquee>
+                <marquee behavior="alternate" scrollamount="15">
+                    <marquee behavior="alternate" scrollamount="5" direction="up">
+                        <img class="img-marquee" src="img/nyan.png" alt="axolotl-cute-astronaut">
+                    </marquee>
+                </marquee>
+                <marquee behavior="alternate" scrollamount="15">
+                    <marquee behavior="alternate" scrollamount="10" direction="down">
+                        <img class="img-marquee" src="img/planet.gif" alt="axolotl-cute-astronaut">
+                    </marquee>
+                </marquee>
+            </div>
             <div class="about">
                 <div class="text-about-container">
                     <div class="title-text" id="text">About me</div>
                 </div>
                 <div class="about-info" id="about">
                     <div class="row align-center justify-between">
-                        <div class="col-7" data-aos="fade-right">
-                            <div class="text3">I'm Vier and I'm <span class="typing-2"></span></div>
+                        <div class="col-4">
+                            <div class="info-image" data-aos="fade-right">
+                                <div class="info-content">
+                                    <img src="img/b92007bfd301e63906ceb35f236759cd.jpg" alt="hakuinfo">
+                                    <h2>Vier</h2>
+                                    <br>
+                                    <table>
+                                        <tr>
+                                            <td>Birthday</td>
+                                            <td>**/**/2003</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phone</td>
+                                            <td>09012345678</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mail</td>
+                                            <td>Vier404@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nationality</td>
+                                            <td>Viet Nam</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 about-right-container" data-aos="fade-left">
+                            <div class="about-title">About myself</div>
                             <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <table>
-                                <tr>
-                                    <td>Birthday</td>
-                                    <td>**/**/2003</td>
-                                </tr>
-                                <tr>
-                                    <td>Phone</td>
-                                    <td>09012345678</td>
-                                </tr>
-                                <tr>
-                                    <td>Mail</td>
-                                    <td>Vier404@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Nationality</td>
-                                    <td>Viet Nam</td>
-                                </tr>
-                            </table>
+                            <div class="icon">
+                                <a href="#" class="icon-a">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a href="#" class="icon-a">
+                                    <ion-icon name="logo-behance"></ion-icon>
+                                </a>
+                                <a href="#" class="icon-a">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </div>
                             <div class="box">
                                 <span><a href="#" class="light">Download CV</a></span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="info-image" data-aos="fade-left">
-                                <img src="img/b92007bfd301e63906ceb35f236759cd.jpg" alt="hakuinfo">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="services" id="service">
-                <div class="title-text-service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Services</div>
-                <div class=" services-content ">
+                <div class="title-text-service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Skills</div>
+                <div class="services-content">
+                    <p> Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud .</p>
+                </div>
+                <div class="skills">
+                    <div class="row">
+                        <div class="card">
+                            <div class="cirle" style="--clr:#00ff7f">
+                                <img src="img/pts.png" alt="logo-pts" class="logo"></div>
+                            <div class="card-content">
+                                <h2>Photoshop</h2>
+                                <p>Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <img src="img/c20ab407d9316480290f7c690836f35c_2106028234032197103.png" alt="heizo" class="card-image">
+                        </div>
+                        <div class="card">
+                            <div class="cirle" style="--clr:#00ff7f">
+                                <img src="img/adobe illustrator_512.png" alt="logo-pts" class="logo"></div>
+                            <div class="card-content">
+                                <h2>Illustrator</h2>
+                                <p>Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <img src="img/2021012215393946486.png" alt="heizo" class="card-image">
+                        </div>
+                        <div class="card">
+                            <div class="cirle" style="--clr:#00ff7f">
+                                <img src="img/lightroom_512.png" alt="logo-pts" class="logo"></div>
+                            <div class="card-content">
+                                <h2>Lightroom</h2>
+                                <p>Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <img src="img/2021120311003437183.png" alt="heizo" class="card-image">
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="contact" id="contact">
+                <div class="title-text-service" data-aos="zoom-in-down">Contact</div>
+                <div class="info-name">
+                    <div class="input-box">
+                        <input type="text" required="required">
+                        <span>First Name</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required="required">
+                        <span>Last Name</span>
+                    </div>
+                </div>
+                <div class="input-box1">
+                    <input type="text" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="input-box1">
+                    <input type="text" required="required">
+                    <span>Message</span>
+                </div>
+                <a href="#" class="send-btn" style="--clr:#00ff7f"><span>Send</span><i></i></a>
+            </div>
             <div class="test">
-
             </div>
         </div>
         <!-- main -->
-        <div class="footer"></div>
+        <div class="footer">
+            Copyright © Vier. All Rights Reserved.
+        </div>
         <!-- footer -->
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12 "></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script src="app.js "></script>

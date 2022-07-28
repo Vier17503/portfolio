@@ -1,21 +1,24 @@
-// $(document).ready(function() {
-//     setTimeout(function() {
-//         $('.wrapper').addClass('loaded');
+// preloader 
+const wrapper = document.getElementById('loader-wrapper');
 
-//     }, 3000);
-// });
+setTimeout(() => {
+    handleLoaded();
+    handleLoaderDisplay();
+}, 3000)
+
+const handleLoaded = () => {
+    wrapper.style.opacity = '0';
+}
+
+const handleLoaderDisplay = () => {
+        setTimeout(() => {
+            wrapper.style.display = 'none';
+        }, 500)
+    }
+    // end of preloader
 
 
 
-// jQuery(function() {
-
-//     $(window).load(function() {
-
-//         $('.wrapper').removeClass('preload');
-
-//     });
-
-// });
 
 var typed = new Typed('.typing-1', {
     strings: ['Freelancer', 'Designer', ],
@@ -25,14 +28,7 @@ var typed = new Typed('.typing-1', {
     loop: true,
     loopCount: Infinity // Default value
 });
-var typed = new Typed('.typing-2', {
-    strings: ['Freelancer', 'Designer', ],
-    smartBackspace: true,
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true,
-    loopCount: Infinity // Default value
-});
+
 
 let text = document.getElementById('text');
 window.addEventListener('scroll', function() {
