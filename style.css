@@ -84,7 +84,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background: black;
+    background: white;
     border-radius: 100%;
     float: left;
     -webkit-animation: load-x 1s cubic-bezier(0.445, 0.1, 0.55, 0.9) infinite;
@@ -285,11 +285,17 @@ html {
 }
 
 .header {
+    position: relative;
     height: 100vh;
     background-image: url(img/klipartz.com.png);
     background-position: bottom right;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.text-content {
+    position: absolute;
+    z-index: 5;
 }
 
 .video {
@@ -306,9 +312,7 @@ html {
     margin: auto;
     padding: 20px 100px;
     z-index: 999;
-    /* background-image: url(img/background.jpg); */
     backdrop-filter: blur(20px);
-    /* box-shadow: 0 0 0px 1px black; */
 }
 
 .logo {
