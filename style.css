@@ -260,6 +260,30 @@ html {
     bottom: 0;
 }
 
+.ontop {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: springgreen url(img/up.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.ontop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
 .header {
     height: 100vh;
     background-image: url(img/klipartz.com.png);
@@ -721,6 +745,178 @@ marquee {
     height: 100vh;
 }
 
+.project {
+    padding-top: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    height: 400px;
+}
+
+.row-line {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.project-card {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    background-color: transparent;
+    border: 1px solid springgreen;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px black;
+    transition: 0.5s;
+}
+
+.project-card:hover {
+    height: 350px;
+}
+
+.project-image {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: springgreen;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px black;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.project-card:hover .project-image {
+    width: 200px;
+    height: 200px;
+}
+
+.project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.project-card:hover .project-content .content-title {
+    transform: translateY(0px);
+}
+
+.content-title {
+    padding: 40px;
+    width: 100%;
+    transition: 0.5s;
+    text-align: center;
+    transform: translateY(150px);
+}
+
+.content-title h2 {
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: springgreen;
+}
+
+.content-data {
+    font-family: poppins;
+    font-weight: 100;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.more-info a {
+    position: relative;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: poppins;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.more-info a:hover {
+    letter-spacing: 0.2em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+}
+
+.more-info a::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: white;
+}
+
+.more-info a span {
+    position: relative;
+    z-index: 1;
+}
+
+.more-info a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.more-info a i::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid var(--clr);
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.more-info a:hover i::before {
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 40px 39px var(--clr);
+}
+
+.more-info a i::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid var(--clr);
+    bottom: -6px;
+    left: 0;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.more-info a:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 38px -39px var(--clr);
+}
+
 .services {
     padding-top: 150px;
     padding-left: 120px;
@@ -749,6 +945,7 @@ marquee {
     font-size: 15px;
     color: white;
     text-align: center;
+    z-index: 1;
 }
 
 .card {

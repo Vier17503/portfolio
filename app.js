@@ -17,8 +17,17 @@ const handleLoaderDisplay = () => {
     }
     // end of preloader
 
+//scrolltotop
+window.addEventListener('scroll', function() {
+    var scroll = document.querySelector('.ontop');
+    scroll.classList.toggle("active", window.scrollY > 1000)
+})
 
-
+function scrolltotop() {
+    window.scrollTo({
+        top: 0
+    })
+}
 
 var typed = new Typed('.typing-1', {
     strings: ['Freelancer', 'Designer', ],

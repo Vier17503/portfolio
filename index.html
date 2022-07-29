@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <div id="loader-wrapper">
         <div id="loader">
             <p>LOADING</p>
@@ -25,6 +24,7 @@
         <div class="loader-section section-right"></div>
     </div>
     <div class="wrapper">
+        <div class="ontop" onclick="scrolltotop();"></div>
         <div>
             <video class="video" preload="auto" autoplay="true" loop="loop" muted volume="0">
                 <source src="img/pexels-louai-munajim-5818973.mp4" type="video/mp4"/>
@@ -42,7 +42,7 @@
                         <li><a href="#" class="text-a">Home</a></li>
                         <li><a href="#about" class="text-a">About</a></li>
                         <li><a href="#service" class="text-a">Skills</a></li>
-                        <li><a href="/project.html" class="text-a">Projects</a></li>
+                        <li><a href="#project" class="text-a">Projects</a></li>
                         <li><a href="#contact" class="text-a">Contact</a></li>
                     </ul>
                 </div>
@@ -84,6 +84,7 @@
                     </marquee>
                 </marquee>
             </div>
+            <!-- astronaut -->
             <div class="about">
                 <div class="text-about-container">
                     <div class="title-text" id="text">About me</div>
@@ -140,6 +141,7 @@
                     </div>
                 </div>
             </div>
+            <!-- about -->
             <div class="services" id="service">
                 <div class="title-text-service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Skills</div>
                 <div class="services-content">
@@ -178,9 +180,64 @@
                     </div>
                 </div>
             </div>
+            <!-- skills -->
+            <div class="project" id="project">
+                <div class="title-text-service" data-aos="fade-up-right">Projects</div>
+                <div class="row-line">
+                    <div class="project-card" data-aos="flip-left">
+                        <div class="project-image">
+                            <img src="img/acc959d5f0c93bb8d604616b8ca1e9d0_2454549363051753122.jpg" alt="genshins">
+                        </div>
+                        <div class="project-content">
+                            <div class="content-title">
+                                <h2>Genshin Impact</h2>
+                                <div class="content-data">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="more-info">
+                                    <a href="#" style="--clr:#00ff7f"><span>More Info</span><i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="flip-up">
+                        <div class="project-image">
+                            <img src="img/acc959d5f0c93bb8d604616b8ca1e9d0_2454549363051753122.jpg" alt="genshins">
+                        </div>
+                        <div class="project-content">
+                            <div class="content-title">
+                                <h2>Genshin Impact</h2>
+                                <div class="content-data">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="more-info">
+                                    <a href="#" style="--clr:#00ff7f"><span>More Info</span><i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="flip-right">
+                        <div class="project-image">
+                            <img src="img/acc959d5f0c93bb8d604616b8ca1e9d0_2454549363051753122.jpg" alt="genshins">
+                        </div>
+                        <div class="project-content">
+                            <div class="content-title">
+                                <h2>Genshin Impact</h2>
+                                <div class="content-data">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="more-info">
+                                    <a href="#" style="--clr:#00ff7f"><span>More Info</span><i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project -->
             <div class="contact" id="contact">
                 <div class="title-text-service" data-aos="zoom-in-down">Contact</div>
-                <div class="info-name">
+                <div class="info-name" data-aos="zoom-in">
                     <div class="input-box">
                         <input type="text" required="required">
                         <span>First Name</span>
@@ -190,16 +247,17 @@
                         <span>Last Name</span>
                     </div>
                 </div>
-                <div class="input-box1">
+                <div class="input-box1" data-aos="zoom-in">
                     <input type="text" required="required">
                     <span>Email</span>
                 </div>
-                <div class="input-box1">
+                <div class="input-box1" data-aos="zoom-in">
                     <input type="text" required="required">
                     <span>Message</span>
                 </div>
-                <a href="#" class="send-btn" style="--clr:#00ff7f"><span>Send</span><i></i></a>
+                <a href="#" class="send-btn" style="--clr:#00ff7f" data-aos="zoom-in"><span>Send</span><i></i></a>
             </div>
+            <!-- contact -->
             <div class="test">
             </div>
         </div>
